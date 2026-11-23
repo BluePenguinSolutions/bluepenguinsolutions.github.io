@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spielekiste · Hilfe / Support / Ayuda</title>
+  <title>Spielekiste · Hilfe und Kontakt / Help and contact / Ayuda y contacto</title>
   <link rel="icon" href="../../assets/spielekiste-icon.png">
   <style>
     @font-face { font-family: Fredoka; src: url(../../assets/Fredoka_500Medium.ttf); font-weight: 500; }
@@ -12,7 +12,8 @@
     a { color: #B23326; }
     h1, h2, h3 { font-weight: 700; line-height: 1.2; }
     h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 1.6em; } h3 { font-size: 1.05rem; margin-top: 1.3em; }
-    nav.lang a { margin-right: 14px; }
+    nav.lang { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+    nav.lang a { white-space: nowrap; }
     section { margin-top: 36px; }
     .card { display: flex; gap: 18px; align-items: center; background: #FFF8EC; border: 3px solid #4A2E1A; border-radius: 24px; padding: 18px; margin-top: 18px; }
     .card img { width: 96px; height: 96px; border-radius: 22px; border: 3px solid #4A2E1A; }
@@ -23,8 +24,8 @@
   </style>
 </head>
 <body>
+  <nav class="lang"><a href="#de" lang="de">Deutsch</a><a href="#en" lang="en">English</a><a href="#es" lang="es">Español</a></nav>
   <img class="mascot" src="../../assets/oskar.png" alt="">
-  <nav class="lang"><a href="#de">Deutsch</a><a href="#en">English</a><a href="#es">Español</a></nav>
   <section id="de" lang="de">
     <h1>Hilfe und Kontakt · Spielekiste</h1>
     <p>Fragen, Probleme oder Ideen? Schreib uns an <a href="mailto:info@tomscheduikat.com">info@tomscheduikat.com</a>. Wir melden uns so schnell wie möglich.</p>

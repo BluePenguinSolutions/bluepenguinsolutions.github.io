@@ -12,7 +12,8 @@
     a { color: #B23326; }
     h1, h2, h3 { font-weight: 700; line-height: 1.2; }
     h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 1.6em; } h3 { font-size: 1.05rem; margin-top: 1.3em; }
-    nav.lang a { margin-right: 14px; }
+    nav.lang { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+    nav.lang a { white-space: nowrap; }
     section { margin-top: 36px; }
     .card { display: flex; gap: 18px; align-items: center; background: #FFF8EC; border: 3px solid #4A2E1A; border-radius: 24px; padding: 18px; margin-top: 18px; }
     .card img { width: 96px; height: 96px; border-radius: 22px; border: 3px solid #4A2E1A; }
@@ -23,7 +24,7 @@
   </style>
 </head>
 <body>
-  <nav class="lang"><a href="#de">Deutsch</a><a href="#en">English</a><a href="#es">Español</a></nav>
+  <nav class="lang"><a href="#de" lang="de">Deutsch</a><a href="#en" lang="en">English</a><a href="#es" lang="es">Español</a></nav>
   <section id="de" lang="de">
     <h1>Datenschutz · Uhrenwerkstatt</h1>
     <h2>Kurz gesagt</h2>
@@ -31,7 +32,7 @@
     <h2>Auf diesem Gerät</h2>
     <p>Profilnamen, Profilbilder, reparierte Uhren und der Spielfortschritt werden nur auf diesem Gerät gespeichert und nie übertragen. Mit der App werden sie gelöscht.</p>
     <h2>Nutzungsstatistik ohne Kennung</h2>
-    <p>Damit wir verstehen, wie das Spiel genutzt wird, sendet die App anonyme Ereignisse an unseren eigenen Server, zum Beispiel „Uhr in Stufe 3 repariert, 2 Glanzpunkte, Dauer 95 Sekunden“, außerdem die App-Version, die Plattform (iOS oder Android) und ob die Vollversion freigeschaltet ist. Zeitpunkte werden auf die volle Minute gerundet. Es wird keine Kennung gesendet: keine Geräte-ID, keine Werbe-ID, kein Name, keine Sprache, kein Gerätemodell. Wir speichern keine IP-Adresse. Der Server läuft bei unserem Hosting-Dienstleister Supabase in Frankfurt (EU); dessen technische Zugriffsprotokolle enthalten kurzzeitig Verbindungsdaten wie die IP-Adresse und werden automatisch gelöscht. Die Daten lassen sich keiner Person und keinem Gerät zuordnen und werden an niemanden weitergegeben.</p>
+    <p>Damit wir verstehen, wie das Spiel genutzt wird, sendet die App anonyme Ereignisse an unseren eigenen Server, zum Beispiel „Uhr in Stufe 3 repariert, 2 Glanzpunkte, Dauer 95 Sekunden“, außerdem die App-Version, die Plattform (iOS oder Android), die Sprache, auf die die App eingestellt ist, und ob die Vollversion freigeschaltet ist. Zeitpunkte werden auf die volle Minute gerundet. Es wird keine Kennung gesendet: keine Geräte-ID, keine Werbe-ID, kein Name, kein Gerätemodell. Wir speichern keine IP-Adresse. Der Server läuft bei unserem Hosting-Dienstleister Supabase in Frankfurt (EU); dessen technische Zugriffsprotokolle enthalten kurzzeitig Verbindungsdaten wie die IP-Adresse und werden automatisch gelöscht. Die Daten lassen sich keiner Person und keinem Gerät zuordnen und werden an niemanden weitergegeben.</p>
     <h2>Käufe</h2>
     <p>Der Kauf „Alles freischalten“ läuft vollständig über den App Store oder Google Play. Wir erhalten keine Zahlungsdaten.</p>
     <h2>Kontakt</h2>
@@ -44,7 +45,7 @@
     <h2>On this device</h2>
     <p>Profile names, profile pictures, repaired clocks and progress are stored on this device only and are never transmitted. They are deleted with the app.</p>
     <h2>Usage statistics without identifiers</h2>
-    <p>To understand how the game is played, the app sends anonymous events to our own server, for example “repaired a clock in step 3, 2 shines, 95 seconds”, plus the app version, the platform (iOS or Android) and whether the full version is unlocked. Times are rounded to the full minute. No identifier is sent: no device ID, no advertising ID, no name, no language, no device model. We do not store IP addresses. The server runs at our hosting provider Supabase in Frankfurt (EU); its technical access logs briefly contain connection data such as the IP address and are deleted automatically. The data cannot be linked to a person or a device and is not shared with anyone.</p>
+    <p>To understand how the game is played, the app sends anonymous events to our own server, for example “repaired a clock in step 3, 2 shines, 95 seconds”, plus the app version, the platform (iOS or Android), the language the app is set to and whether the full version is unlocked. Times are rounded to the full minute. No identifier is sent: no device ID, no advertising ID, no name, no device model. We do not store IP addresses. The server runs at our hosting provider Supabase in Frankfurt (EU); its technical access logs briefly contain connection data such as the IP address and are deleted automatically. The data cannot be linked to a person or a device and is not shared with anyone.</p>
     <h2>Purchases</h2>
     <p>The “Unlock everything” purchase is handled entirely by the App Store or Google Play. We receive no payment details.</p>
     <h2>Contact</h2>
@@ -57,7 +58,7 @@
     <h2>En este dispositivo</h2>
     <p>Los nombres e imágenes de perfil, los relojes reparados y el progreso se guardan solo en este dispositivo y nunca se transmiten. Se eliminan con la app.</p>
     <h2>Estadísticas de uso sin identificadores</h2>
-    <p>Para entender cómo se juega, la app envía eventos anónimos a nuestro propio servidor, por ejemplo «reloj reparado en el nivel 3, 2 brillos, 95 segundos», además de la versión de la app, la plataforma (iOS o Android) y si la versión completa está desbloqueada. Las horas se redondean al minuto. No se envía ningún identificador: ni ID de dispositivo, ni ID de publicidad, ni nombre, ni idioma, ni modelo. No guardamos direcciones IP. El servidor funciona en nuestro proveedor de alojamiento Supabase en Fráncfort (UE); sus registros técnicos de acceso contienen brevemente datos de conexión como la dirección IP y se borran automáticamente. Los datos no se pueden asociar a ninguna persona ni dispositivo y no se comparten con nadie.</p>
+    <p>Para entender cómo se juega, la app envía eventos anónimos a nuestro propio servidor, por ejemplo «reloj reparado en el nivel 3, 2 brillos, 95 segundos», además de la versión de la app, la plataforma (iOS o Android), el idioma en el que está configurada la app y si la versión completa está desbloqueada. Las horas se redondean al minuto. No se envía ningún identificador: ni ID de dispositivo, ni ID de publicidad, ni nombre, ni modelo. No guardamos direcciones IP. El servidor funciona en nuestro proveedor de alojamiento Supabase en Fráncfort (UE); sus registros técnicos de acceso contienen brevemente datos de conexión como la dirección IP y se borran automáticamente. Los datos no se pueden asociar a ninguna persona ni dispositivo y no se comparten con nadie.</p>
     <h2>Compras</h2>
     <p>La compra «Desbloquear todo» se gestiona íntegramente a través de App Store o Google Play. No recibimos datos de pago.</p>
     <h2>Contacto</h2>
